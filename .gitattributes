@@ -1,0 +1,18 @@
+# Committed JSON data fixtures under data/mining/ are read back as raw bytes
+# and/or byte-compared against a canonical re-serialization by production
+# code and tests (e.g. long_treasury_auction_cycle_3x_inverse_rotation's
+# events.json <-> canonical_events_bytes() digest binding). core.autocrlf=true
+# on Windows checkouts silently rewrites these files' LF line endings to CRLF
+# at checkout time, which breaks any byte-exact comparison against the
+# canonical (LF-only) form even though the content is unchanged. Pin these to
+# LF so checkout is deterministic across machines regardless of the local
+# core.autocrlf setting.
+#
+# The NYSE calendar is pinned by an LF-normalised hash in src/trading_calendar.py, so it is checked out as LF too.
+data/live/nyse_calendar_2026_2028.json text eol=lf
+data/mining/**/*.json text eol=lf
+# The frozen vendor futures files under data/mining/gold_copper are pinned by a sha256 manifest and verified
+# byte for byte by the gold/copper driver before any score, so they get the same deterministic-LF treatment
+# as the JSON fixtures above: without it a Windows checkout would rewrite them to CRLF and the driver would
+# refuse the frozen cache as tampered.
+data/mining/**/*.csv text eol=lf

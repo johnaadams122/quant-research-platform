@@ -1,0 +1,264 @@
+{
+ "schema_version": 1,
+ "source": "CFTC Commitments of Traders, Legacy report, Futures-Only (public reporting Socrata)",
+ "dataset": "6dca-aqww",
+ "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json",
+ "field": "open_interest_all",
+ "retrieved_at": "2026-09-24T11:44:27Z",
+ "point_in_time_status": "not_verified_never_revised: the CFTC exposes no vintage archive and documents corrections to Legacy Futures-Only reports (2017-03-28, 2018-09-18, 2019-10-15); Socrata serves the corrected values, not as first published. Release timing is handled by the D+6 lag and three publication blackouts, not by a vintage history",
+ "availability": "as-of date plus 6 calendar days; three publication blackouts handled in mining.cftc_data.PUBLICATION_BLACKOUTS",
+ "contracts": {
+  "002602": {
+   "file": "002602.json",
+   "sha256": "2c8f0a19a3fc3c9a2db43747e19ceeff8c38569b77cc506e9a8f819ab8ee281b",
+   "bytes": 275150,
+   "rows": 1498,
+   "first_asof": "1998-01-06",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='002602'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "005602": {
+   "file": "005602.json",
+   "sha256": "972cc00cafb03b296bacaf9432850023b370c36c40a52c3e73bab71c82258b71",
+   "bytes": 280144,
+   "rows": 1498,
+   "first_asof": "1998-01-06",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='005602'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "001602": {
+   "file": "001602.json",
+   "sha256": "45728ffe366fb783985a2f2bb1be2067254342d8bd1aca053630b4ea9863ca45",
+   "bytes": 278253,
+   "rows": 1498,
+   "first_asof": "1998-01-06",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='001602'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "080732": {
+   "file": "080732.json",
+   "sha256": "b26d2f485467042e8ea3179b0e5673b2906855621df07b4c79a687a07abe8178",
+   "bytes": 369834,
+   "rows": 1932,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='080732'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "083731": {
+   "file": "083731.json",
+   "sha256": "cde7205994ee36f58a52cca87aba7bcaf7db5cfd03818fafa8f8533d649e51f4",
+   "bytes": 361253,
+   "rows": 1932,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='083731'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "033661": {
+   "file": "033661.json",
+   "sha256": "02dba4c49c383b4b0623be663b60ac3cea72bec7e0a0dfe738f511ec327fe806",
+   "bytes": 364161,
+   "rows": 1933,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='033661'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "073732": {
+   "file": "073732.json",
+   "sha256": "021ea9835a1a640b09db7238a44bb42cfbe067848a7f4bca3fb9445b1e7d0e7a",
+   "bytes": 355644,
+   "rows": 1932,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='073732'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "067651": {
+   "file": "067651.json",
+   "sha256": "acf8993c7eb92b812214925935b0d5d7e09ca0a90be5b7973ffaafbf12d08f97",
+   "bytes": 399865,
+   "rows": 1933,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='067651'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "023651": {
+   "file": "023651.json",
+   "sha256": "f31f3cb2b7cb31f08e9d10b3cb3ff48cfb56a6af002fafa19e7a27859ee1ec85",
+   "bytes": 359707,
+   "rows": 1831,
+   "first_asof": "1990-04-12",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='023651'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "022651": {
+   "file": "022651.json",
+   "sha256": "809103464bc89b689856068617931b7270e10b15c434a375c2b0aa06458bd066",
+   "bytes": 411575,
+   "rows": 1933,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='022651'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "111659": {
+   "file": "111659.json",
+   "sha256": "c7086fd52cb000de4669edb47273086f289c66e88f4bfb61a5e59efea2d81a33",
+   "bytes": 223657,
+   "rows": 1075,
+   "first_asof": "2006-02-14",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='111659'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "057642": {
+   "file": "057642.json",
+   "sha256": "0a82976d82a852ebae2e63183f0c800f682d04d120aef318f072d89c75d103a2",
+   "bytes": 376840,
+   "rows": 1935,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='057642'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "054642": {
+   "file": "054642.json",
+   "sha256": "86f1377677d304e6071856f483bc776c7328c8a9ab438cee3b01a97a26ae4125",
+   "bytes": 305601,
+   "rows": 1586,
+   "first_asof": "1996-04-02",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='054642'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "088691": {
+   "file": "088691.json",
+   "sha256": "4db77cfd044dc0cad5679b916d957b25f05a0de527da08d1f662fc8ac56fb641",
+   "bytes": 355835,
+   "rows": 1934,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='088691'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "084691": {
+   "file": "084691.json",
+   "sha256": "9a74fee7e7fa81ff4cab6deee8b4bb9415a70c3130ea0dd6aecff33507e92eed",
+   "bytes": 359072,
+   "rows": 1934,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='084691'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "085692": {
+   "file": "085692.json",
+   "sha256": "85d4ff1cfb7fcba759f9133c302f1686f9f687e8b61a817f3769f0511605ac07",
+   "bytes": 358489,
+   "rows": 1849,
+   "first_asof": "1989-07-31",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='085692'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "076651": {
+   "file": "076651.json",
+   "sha256": "6c204e0a1204bc7fec1d39e16cd36355a1c09a46f4f4b7630c62aaaa64d198cd",
+   "bytes": 371012,
+   "rows": 1934,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='076651'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  },
+  "075651": {
+   "file": "075651.json",
+   "sha256": "4b4a8f002f878cd88ac707911cc0cedba6b8e24eb8992de1ed0294e8c9ec1507",
+   "bytes": 358172,
+   "rows": 1860,
+   "first_asof": "1986-01-15",
+   "last_asof": "2026-09-15",
+   "query": {
+    "$select": "report_date_as_yyyy_mm_dd,cftc_contract_market_code,open_interest_all,market_and_exchange_names",
+    "$where": "cftc_contract_market_code='075651'",
+    "$order": "report_date_as_yyyy_mm_dd",
+    "$limit": "50000"
+   }
+  }
+ }
+}

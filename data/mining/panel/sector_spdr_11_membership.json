@@ -1,0 +1,65 @@
+{
+  "basis_id": "sector_spdr_11",
+  "schema_version": 1,
+  "point_in_time": true,
+  "ledgerable": true,
+  "ledger_block_reason": null,
+  "notes": "Point-in-time membership of the eleven Select Sector SPDR funds, hand-dated. Each start is the fund's FIRST DAILY BAR as read directly off its own yfinance max-period history (auto_adjust=True) via data_pipeline.fetch_ohlc (verified 2026-09-04). scripts/build_sector_panel.py fetch aborts if any fund's first bar is later than its recorded start (an earlier first bar is accepted). Nine founding funds (XLB XLE XLF XLI XLK XLP XLU XLV XLY) share 1998-12-22; XLRE joined 2015-10-08 and XLC 2018-06-19. No fund has left the family, so every end is null. Membership is never inferred from price data (see panel.py's module docstring).",
+  "members": [
+    {
+      "ticker": "XLB",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLE",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLF",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLI",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLK",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLP",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLU",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLV",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLY",
+      "start": "1998-12-22",
+      "end": null
+    },
+    {
+      "ticker": "XLRE",
+      "start": "2015-10-08",
+      "end": null
+    },
+    {
+      "ticker": "XLC",
+      "start": "2018-06-19",
+      "end": null
+    }
+  ]
+}

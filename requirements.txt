@@ -1,0 +1,28 @@
+# Runtime dependencies (lower bounds). Install the test tools with requirements-dev.txt.
+
+# Core data and math
+numpy>=2.1
+pandas>=2.2,<3   # pandas 3 changes backtest results
+scipy>=1.15
+python-dateutil>=2.9
+tzdata; sys_platform == 'win32'   # time-zone data for the exchange calendars
+
+# Market data and exchange calendars
+yfinance>=1.4
+requests>=2.32
+pandas_market_calendars>=5.4
+exchange_calendars>=4.13
+
+# Parsers used by the data-fetch scripts (pandas.read_html, pandas.read_excel)
+lxml>=5.0
+openpyxl>=3.1
+
+# Regime detection
+hmmlearn>=0.3.3
+
+# Sweep cache and benchmark worker
+pyarrow>=19.0
+psutil>=5.9
+
+# Charts written by the strategy sweep
+matplotlib>=3.10

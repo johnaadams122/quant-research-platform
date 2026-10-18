@@ -1,0 +1,471 @@
+{
+  "holdout_start": "2026-02-28",
+  "holdout_end": "2026-08-29",
+  "in_sample": [
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "announcement_date": "2024-03-01",
+      "effective_date": "2024-03-18",
+      "source_url": "https://press.spglobal.com/2024-03-01-Super-Micro-Computer-and-Deckers-Outdoor-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 37,
+      "ask": 37.08
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corp.",
+      "announcement_date": "2024-03-01",
+      "effective_date": "2024-03-18",
+      "source_url": "https://press.spglobal.com/2024-03-01-Super-Micro-Computer-and-Deckers-Outdoor-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 87.67,
+      "ask": 88.07
+    },
+    {
+      "ticker": "SOLV",
+      "name": "Solventum Corp.",
+      "announcement_date": "2024-03-27",
+      "effective_date": "2024-04-01",
+      "source_url": "https://press.spglobal.com/2024-03-27-GE-Vernova-and-Solventum-Set-to-Join-S-P-500-Dentsply-Sirona-to-Join-S-P-MidCap-400-Others-to-Join-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "Implausible spread ~2116.3 bps (>=300 bps threshold) -- bid/ask far too wide for a liquid large-cap"
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "announcement_date": "2024-03-27",
+      "effective_date": "2024-04-02",
+      "source_url": "https://press.spglobal.com/2024-03-27-GE-Vernova-and-Solventum-Set-to-Join-S-P-500-Dentsply-Sirona-to-Join-S-P-MidCap-400-Others-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 913.88,
+      "ask": 914.1
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "announcement_date": "2024-05-03",
+      "effective_date": "2024-05-08",
+      "source_url": "https://press.spglobal.com/2024-05-03-Vistra-Set-to-Join-S-P-500-Aaon-to-Join-S-P-MidCap-400-Marathon-Digital-Holdings-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 138,
+      "ask": 139
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co. Inc.",
+      "announcement_date": "2024-06-07",
+      "effective_date": "2024-06-24",
+      "source_url": "https://press.spglobal.com/2024-06-07-KKR,-CrowdStrike-Holdings-and-GoDaddy-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "Implausible spread ~382.5 bps (>=300 bps threshold) -- too wide for a liquid large-cap"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "announcement_date": "2024-06-07",
+      "effective_date": "2024-06-24",
+      "source_url": "https://press.spglobal.com/2024-06-07-KKR,-CrowdStrike-Holdings-and-GoDaddy-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 217.18,
+      "ask": 217.66
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GoDaddy Inc.",
+      "announcement_date": "2024-06-07",
+      "effective_date": "2024-06-24",
+      "source_url": "https://press.spglobal.com/2024-06-07-KKR,-CrowdStrike-Holdings-and-GoDaddy-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "Implausible spread ~842.9 bps (>=300 bps threshold) -- too wide for a liquid large-cap"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "announcement_date": "2024-09-06",
+      "effective_date": "2024-09-23",
+      "source_url": "https://press.spglobal.com/2024-09-06-Palantir-Technologies,-Dell-Technologies,-and-Erie-Indemnity-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 185.4,
+      "ask": 185.5
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "announcement_date": "2024-09-06",
+      "effective_date": "2024-09-23",
+      "source_url": "https://press.spglobal.com/2024-09-06-Palantir-Technologies,-Dell-Technologies,-and-Erie-Indemnity-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 455.5,
+      "ask": 457
+    },
+    {
+      "ticker": "ERIE",
+      "name": "Erie Indemnity Co.",
+      "announcement_date": "2024-09-06",
+      "effective_date": "2024-09-23",
+      "source_url": "https://press.spglobal.com/2024-09-06-Palantir-Technologies,-Dell-Technologies,-and-Erie-Indemnity-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "implausible spread ~4539.9 bps (ask 300 vs bid 189), market closed"
+    },
+    {
+      "ticker": "AMTM",
+      "name": "Amentum Holdings Inc.",
+      "announcement_date": "2024-09-24",
+      "effective_date": "2024-09-30",
+      "source_url": "https://press.spglobal.com/2024-09-24-Amentum-Set-to-Join-S-P-500-Bath-Body-Works-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 20.2,
+      "ask": 20.5
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corp.",
+      "announcement_date": "2024-11-21",
+      "effective_date": "2024-11-26",
+      "source_url": "https://press.spglobal.com/2024-11-21-Texas-Pacific-Land-Set-to-Join-S-P-500,-Mueller-Industries-to-Join-S-P-MidCap-400-and-Atlas-Energy-Solutions-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 362.5,
+      "ask": 364.38
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management Inc.",
+      "announcement_date": "2024-12-06",
+      "effective_date": "2024-12-23",
+      "source_url": "https://press.spglobal.com/2024-12-06-Apollo-Global-Management-and-Workday-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 133,
+      "ask": 135.5
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday Inc.",
+      "announcement_date": "2024-12-06",
+      "effective_date": "2024-12-23",
+      "source_url": "https://press.spglobal.com/2024-12-06-Apollo-Global-Management-and-Workday-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 204,
+      "ask": 204.72
+    },
+    {
+      "ticker": "LII",
+      "name": "Lennox International Inc.",
+      "announcement_date": "2024-12-18",
+      "effective_date": "2024-12-23",
+      "source_url": "https://press.spglobal.com/2024-12-18-Lennox-International-Set-to-Join-S-P-500-and-BILL-Holdings-to-Join-S-P-MidCap-400",
+      "cost_status": "ok",
+      "bid": 392.79,
+      "ask": 393.99
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash, Inc.",
+      "announcement_date": "2025-03-07",
+      "effective_date": "2025-03-24",
+      "source_url": "https://press.spglobal.com/2025-03-07-DoorDash,-TKO-Group-Holdings,-Williams-Sonoma-and-Expand-Energy-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 236.8,
+      "ask": 237.4
+    },
+    {
+      "ticker": "TKO",
+      "name": "TKO Group Holdings, Inc.",
+      "announcement_date": "2025-03-07",
+      "effective_date": "2025-03-24",
+      "source_url": "https://press.spglobal.com/2025-03-07-DoorDash,-TKO-Group-Holdings,-Williams-Sonoma-and-Expand-Energy-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "spread ~309.3 bps, at/above 300 bps threshold"
+    },
+    {
+      "ticker": "WSM",
+      "name": "Williams-Sonoma, Inc.",
+      "announcement_date": "2025-03-07",
+      "effective_date": "2025-03-24",
+      "source_url": "https://press.spglobal.com/2025-03-07-DoorDash,-TKO-Group-Holdings,-Williams-Sonoma-and-Expand-Energy-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "spread ~785.2 bps, far above 300 bps threshold"
+    },
+    {
+      "ticker": "EXE",
+      "name": "Expand Energy Corporation",
+      "announcement_date": "2025-03-07",
+      "effective_date": "2025-03-24",
+      "source_url": "https://press.spglobal.com/2025-03-07-DoorDash,-TKO-Group-Holdings,-Williams-Sonoma-and-Expand-Energy-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 98.16,
+      "ask": 99
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "announcement_date": "2025-05-12",
+      "effective_date": "2025-05-19",
+      "source_url": "https://press.spglobal.com/2025-05-12-Coinbase-Global-Set-to-Join-S-P-500",
+      "cost_status": "ok",
+      "bid": 178.2,
+      "ask": 178.5
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "announcement_date": "2025-07-02",
+      "effective_date": "2025-07-09",
+      "source_url": "https://press.spglobal.com/2025-07-02-Datadog-Set-to-Join-S-P-500",
+      "cost_status": "ok",
+      "bid": 236.9,
+      "ask": 237
+    },
+    {
+      "ticker": "TTD",
+      "name": "The Trade Desk, Inc.",
+      "announcement_date": "2025-07-14",
+      "effective_date": "2025-07-18",
+      "source_url": "https://press.spglobal.com/2025-07-14-The-Trade-Desk-Set-to-Join-S-P-500",
+      "cost_status": "ok",
+      "bid": 13.55,
+      "ask": 13.6
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block, Inc.",
+      "announcement_date": "2025-07-18",
+      "effective_date": "2025-07-23",
+      "source_url": "https://press.spglobal.com/2025-07-18-Block-Set-to-Join-S-P-500",
+      "cost_status": "ok",
+      "bid": 83.5,
+      "ask": 84
+    },
+    {
+      "ticker": "IBKR",
+      "name": "Interactive Brokers Group, Inc.",
+      "announcement_date": "2025-08-25",
+      "effective_date": "2025-08-28",
+      "source_url": "https://press.spglobal.com/2025-08-25-Interactive-Brokers-Group-Set-to-Join-S-P-500,-Talen-Energy-to-Join-S-P-MidCap-400-and-Kinetik-Holdings-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 95.5,
+      "ask": 95.86
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corp.",
+      "announcement_date": "2025-09-05",
+      "effective_date": "2025-09-22",
+      "source_url": "https://press.spglobal.com/2025-09-05-AppLovin,-Robinhood-Markets-and-Emcor-Group-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 318.12,
+      "ask": 318.6
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "announcement_date": "2025-09-05",
+      "effective_date": "2025-09-22",
+      "source_url": "https://press.spglobal.com/2025-09-05-AppLovin,-Robinhood-Markets-and-Emcor-Group-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 104.06,
+      "ask": 104.09
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "announcement_date": "2025-09-05",
+      "effective_date": "2025-09-22",
+      "source_url": "https://press.spglobal.com/2025-09-05-AppLovin,-Robinhood-Markets-and-Emcor-Group-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 736.5,
+      "ask": 738
+    },
+    {
+      "ticker": "SOLS",
+      "name": "Solstice Advanced Materials Inc.",
+      "announcement_date": "2025-10-27",
+      "effective_date": "2025-10-31",
+      "source_url": "https://press.spglobal.com/2025-10-27-Solstice-Advance-Materials-and-Qnity-Electronics-Set-to-Join-S-P-500-Others-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 63.53,
+      "ask": 64.45
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics, Inc.",
+      "announcement_date": "2025-10-27",
+      "effective_date": "2025-11-04",
+      "source_url": "https://press.spglobal.com/2025-10-27-Solstice-Advance-Materials-and-Qnity-Electronics-Set-to-Join-S-P-500-Others-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 119.5,
+      "ask": 121
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corp.",
+      "announcement_date": "2025-11-24",
+      "effective_date": "2025-11-28",
+      "source_url": "https://press.spglobal.com/2025-11-24-Sandisk-Set-to-Join-S-P-500-Upwork,-First-Interstate-BancSystem,-PTC-Therapeutics-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 1483.11,
+      "ask": 1483.5
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "announcement_date": "2025-12-05",
+      "effective_date": "2025-12-22",
+      "source_url": "https://press.spglobal.com/2025-12-05-CRH,-Carvana-and-Comfort-Systems-USA-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 95.85,
+      "ask": 96.43
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co.",
+      "announcement_date": "2025-12-05",
+      "effective_date": "2025-12-22",
+      "source_url": "https://press.spglobal.com/2025-12-05-CRH,-Carvana-and-Comfort-Systems-USA-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 74.05,
+      "ask": 74.29
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA, Inc.",
+      "announcement_date": "2025-12-05",
+      "effective_date": "2025-12-22",
+      "source_url": "https://press.spglobal.com/2025-12-05-CRH,-Carvana-and-Comfort-Systems-USA-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 1519.05,
+      "ask": 1521.5
+    },
+    {
+      "ticker": "ARES",
+      "name": "Ares Management Corp.",
+      "announcement_date": "2025-12-08",
+      "effective_date": "2025-12-11",
+      "source_url": "https://press.spglobal.com/2025-12-08-Ares-Management-Set-to-Join-S-P-500-Sezzle-and-Vital-Farms-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 142.53,
+      "ask": 143.98
+    }
+  ],
+  "holdout": [
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings",
+      "announcement_date": "2026-03-06",
+      "effective_date": "2026-03-23",
+      "source_url": "https://press.spglobal.com/2026-03-06-Vertiv-Holdings,-Lumentum-Holdings,-Coherent,-and-EchoStar-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 258.24,
+      "ask": 260
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings",
+      "announcement_date": "2026-03-06",
+      "effective_date": "2026-03-23",
+      "source_url": "https://press.spglobal.com/2026-03-06-Vertiv-Holdings,-Lumentum-Holdings,-Coherent,-and-EchoStar-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 894.3,
+      "ask": 895.65
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent",
+      "announcement_date": "2026-03-06",
+      "effective_date": "2026-03-23",
+      "source_url": "https://press.spglobal.com/2026-03-06-Vertiv-Holdings,-Lumentum-Holdings,-Coherent,-and-EchoStar-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 278.81,
+      "ask": 279.29
+    },
+    {
+      "ticker": "SATS",
+      "name": "EchoStar",
+      "announcement_date": "2026-03-06",
+      "effective_date": "2026-03-23",
+      "source_url": "https://press.spglobal.com/2026-03-06-Vertiv-Holdings,-Lumentum-Holdings,-Coherent,-and-EchoStar-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
+      "cost_status": "error",
+      "cost_note": "no quote returned for this ticker"
+    },
+    {
+      "ticker": "CASY",
+      "name": "Casey's General Stores",
+      "announcement_date": "2026-04-06",
+      "effective_date": "2026-04-09",
+      "source_url": "https://press.spglobal.com/2026-04-06-Caseys-General-Stores-Set-to-Join-S-P-500-DigitalOcean-Holdings-to-Join-S-P-MidCap-400-Broadstone-Net-Lease-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 751.5,
+      "ask": 767
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems",
+      "announcement_date": "2026-04-30",
+      "effective_date": "2026-05-07",
+      "source_url": "https://press.spglobal.com/2026-04-30-Veeva-Systems-Set-to-Join-S-P-500",
+      "cost_status": "ok",
+      "bid": 276.65,
+      "ask": 277.98
+    },
+    {
+      "ticker": "FDXF",
+      "name": "FedEx Freight Holding Company",
+      "announcement_date": "2026-05-27",
+      "effective_date": "2026-06-02",
+      "source_url": "https://press.spglobal.com/2026-05-27-FedEx-Freight-Holding-Company-Set-to-Join-S-P-500-EPAM-Systems-and-Dave-to-Join-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 131.75,
+      "ask": 134
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "announcement_date": "2026-06-05",
+      "effective_date": "2026-06-22",
+      "source_url": "https://press.spglobal.com/2026-06-05-Marvell-Technology-and-Flex-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 216.3,
+      "ask": 216.4
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex",
+      "announcement_date": "2026-06-05",
+      "effective_date": "2026-06-22",
+      "source_url": "https://press.spglobal.com/2026-06-05-Marvell-Technology-and-Flex-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 110,
+      "ask": 111
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace",
+      "announcement_date": "2026-06-23",
+      "effective_date": "2026-06-29",
+      "source_url": "https://press.spglobal.com/2026-06-23-Honeywell-Aerospace-Set-to-Join-S-P-500-S-P-100-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600",
+      "cost_status": "ok",
+      "bid": 162.25,
+      "ask": 163
+    },
+    {
+      "ticker": "FERG",
+      "name": "Ferguson Enterprises Inc.",
+      "announcement_date": "2026-07-31",
+      "effective_date": "2026-08-05",
+      "source_url": "https://press.spglobal.com/2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-P-SmallCap-600",
+      "cost_status": "unusable",
+      "cost_note": "Implausible spread ~1092 bps (>=300 bps threshold), likely stale/bad quote"
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit Inc.",
+      "announcement_date": "2026-08-13",
+      "effective_date": "2026-08-18",
+      "source_url": "https://press.spglobal.com/2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400",
+      "cost_status": "ok",
+      "bid": 153.03,
+      "ask": 153.35
+    }
+  ],
+  "source": "S&P 500 index-addition announcements compiled from S&P Dow Jones Indices press releases (press.spglobal.com primary source for every entry)"
+}

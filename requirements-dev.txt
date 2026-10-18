@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=9,<10
+curl_cffi>=0.15
+statsmodels>=0.14   # cross-checks one regression in the tests

@@ -1,0 +1,160 @@
+{
+  "commands": [
+    {
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "id": "dependencies",
+      "outputs": [],
+      "phase": "setup",
+      "timeoutSeconds": 900,
+      "tool": "python"
+    },
+    {
+      "args": [
+        "-m",
+        "pytest",
+        "src/tests",
+        "-q"
+      ],
+      "id": "unit",
+      "outputs": [],
+      "parser": "pytest",
+      "phase": "test",
+      "timeoutSeconds": 14580,
+      "tool": "python"
+    }
+  ],
+  "declaredSkips": [],
+  "mockedServices": [
+    {
+      "fixtures": [
+        "src/tests/_intraday_abi1_driver_support.py",
+        "src/tests/test_batch5_dividend_month_premium_predicted_ex_month.py",
+        "src/tests/test_batch5_ex_dividend_day_capture_pooled.py",
+        "src/tests/test_batch5_gold_copper_ratio_fear_valuation_spy_overlay.py",
+        "src/tests/test_batch5_move_vix_divergence_of_fear_gauges_derisking.py",
+        "src/tests/test_batch5_reit_yield_spread_valuation_rotation.py",
+        "src/tests/test_batch5_short_rate_easing_smallcap_rotation.py",
+        "src/tests/test_batch5_stock_split_post_split_drift_pooled.py",
+        "src/tests/test_build_sector_panel.py",
+        "src/tests/test_data_pipeline_irx.py",
+        "src/tests/test_intraday_abi1_driver_guards.py",
+        "src/tests/test_mining_vendor_coverage.py",
+        "src/tests/test_options_vol.py",
+        "src/tests/test_run_abi1_mining.py",
+        "src/tests/test_run_accrual_anomaly_mining.py",
+        "src/tests/test_run_batch5_mining.py",
+        "src/tests/test_run_capex_cycle_mining.py",
+        "src/tests/test_run_cboe_rotation_mining.py",
+        "src/tests/test_run_commodity_oi_cycle_overlay_abi1.py",
+        "src/tests/test_run_gold_copper_overlay_abi1.py",
+        "src/tests/test_run_green_day_morning_pullback_abi1.py",
+        "src/tests/test_run_intraday_rsi2_reversion_abi1.py",
+        "src/tests/test_run_ipo_fade_beta_neutral_abi1.py",
+        "src/tests/test_run_margin_debt_deleverage_mining.py",
+        "src/tests/test_run_residual_momentum_overlay_abi1.py",
+        "src/tests/test_run_spike_fade_study.py",
+        "src/tests/test_run_spike_fade_vehicle_addendum.py",
+        "src/tests/test_run_synthetic_leveraged_dip_mining.py",
+        "src/tests/test_run_treasury_month_end_overlay_abi1.py",
+        "src/tests/test_run_vix1d_vix9d_deleverage_mining.py"
+      ],
+      "method": "Tests inject a fake fetcher callable or monkeypatch the repo's fetch functions and loaders (fetch_ohlc, the implied-volatility proxy, risk-free-rate, futures, dividend and split-event fetchers, the run scripts' OHLC loaders, batch5.load_frame and the ex-dividend load_events loader) so they return synthetic Yahoo-shaped frames or CSV bytes and never reach yfinance.",
+      "service": "Yahoo Finance via yfinance"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_mining_external_data.py",
+        "src/tests/test_run_fed_net_liquidity_mining.py",
+        "src/tests/test_run_money_market_bounded_burnin_mining.py",
+        "src/tests/test_run_money_market_mining.py",
+        "src/tests/test_run_spike_fade_study.py",
+        "src/tests/test_run_spike_fade_vehicle_addendum.py"
+      ],
+      "method": "Tests pass a fake http_get returning canned CSV responses, monkeypatch the point-in-time FRED fetch on the driver, or serve synthetic FRED CSV bytes from a fake fetcher keyed by source and symbol.",
+      "service": "FRED (St. Louis Fed API)"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_mining_accrual_coverage.py",
+        "src/tests/test_mining_edgar_data.py",
+        "src/tests/test_mining_edgar_point_in_time.py",
+        "src/tests/test_mining_retail_inventory_coverage.py",
+        "src/tests/test_mining_sec_contact.py",
+        "src/tests/test_run_accrual_anomaly_mining.py",
+        "src/tests/test_run_capex_cycle_mining.py"
+      ],
+      "method": "Tests inject a fake http_get with canned company-concept JSON, load a pinned synthetic EDGAR fixture JSON, or inject or monkeypatch the tag-fetch, coverage-check and point-in-time series builders and pass a ticker-to-CIK map so no request is made.",
+      "service": "SEC EDGAR"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_batch5_commodity_open_interest_cycle_commodity_bond_overlay.py",
+        "src/tests/test_mining_cftc_data.py",
+        "src/tests/test_run_commodity_oi_cycle_overlay_abi1.py"
+      ],
+      "method": "Tests inject a fake http_get returning synthetic open-interest rows into the cache builder, or build synthetic in-memory open-interest series and snapshots instead of fetching.",
+      "service": "CFTC (commitments of traders data)"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_mining_crypto_data.py",
+        "src/tests/test_run_bitcoin_spillover_abi1.py"
+      ],
+      "method": "Tests inject a fake http_get returning canned Kraken OHLC and funding-rate JSON responses and an injected clock, plus hand-written fixture files for the downstream driver.",
+      "service": "Kraken (crypto prices)"
+    },
+    {
+      "fixtures": [
+        "src/tests/_intraday_abi1_driver_support.py",
+        "src/tests/test_intraday_abi1_driver_guards.py",
+        "src/tests/test_mining_intraday_data.py",
+        "src/tests/test_run_day_trading_mining.py",
+        "src/tests/test_run_green_day_morning_pullback_abi1.py",
+        "src/tests/test_run_intraday_rsi2_reversion_abi1.py",
+        "src/tests/test_run_swing_mining.py",
+        "src/tests/test_validate_alpaca_intraday.py"
+      ],
+      "method": "Tests inject a fake HTTP session object with canned bar pages and a stub credentials function, or monkeypatch fetch_intraday_bars on the driver to return synthetic minute bars.",
+      "service": "Alpaca (intraday market data)"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_mining_sec_contact.py"
+      ],
+      "method": "The test monkeypatches the script's S&P 500 ticker fetch (and the SEC company-tickers fetch) to return short hard-coded synthetic ticker lists.",
+      "service": "Wikipedia (S&P 500 constituent list)"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_mining_external_data.py",
+        "src/tests/test_run_margin_debt_deleverage_mining.py",
+        "src/tests/test_run_margin_debt_mining.py"
+      ],
+      "method": "Tests feed a synthetic in-memory workbook of DataFrames to the parser, or monkeypatch the driver's FINRA margin-debt fetch to return a fake snapshot.",
+      "service": "FINRA (margin debt workbook)"
+    },
+    {
+      "fixtures": [
+        "src/tests/test_batch5_preferred_stock_yield_spread_reversion.py"
+      ],
+      "method": "The test feeds short inline HTML or JSON snippets in each publisher's page shape to the fetch script's parsers, loaded by file path without any network call.",
+      "service": "Dividend-history websites (Digrin, dividendhistory.org, StockAnalysis, Nasdaq)"
+    },
+    {
+      "fixtures": [
+        "src/tests/conftest.py",
+        "src/tests/offline_guard.py",
+        "src/tests/test_offline_guard.py"
+      ],
+      "method": "conftest.py's pytest_configure calls offline_guard.install(), which replaces socket connect, connect_ex, create_connection, asyncio loop connects and curl_cffi session requests with refusals (loopback is allowed only inside socket.socketpair), and install_for_children() puts a temporary sitecustomize.py first on PYTHONPATH so child Python processes get the same guard.",
+      "service": "All network access (session-wide guard)"
+    }
+  ],
+  "schema": "portfolio-test-plan-v1"
+}
